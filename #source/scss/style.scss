@@ -194,6 +194,68 @@ height: 624px;
 	line-height: 24px;
 	margin: 0px 0px 30px 0px;
 }
+
+
+.block-second {
+	padding: 48px 0px 0px 0px;
+}
+.block-container__row {
+	@include flexbox;
+	flex-direction:column;
+	text-align: center;
+}
+.block-container__logo {
+	margin: 0px 0px 31px 0px;
+	& img{
+
+	}
+	// text-align: center;
+}
+.block-container__subtitle {
+	color: #000000;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 16px 0px;
+}
+.block-container__title {
+	color: #3cd072;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 44px 0px;
+}
+.block-second__wrap {}
+.block-second__row {
+	@include flexbox;
+	justify-content: space-between;
+}
+.block-second__col {}
+.block-second__item-row {
+	@include flexbox;
+	flex-direction:column;
+	text-align: center;
+}
+.block-second__item-logo {
+	margin: 0px 0px 31px 0px;
+}
+.block-second__item-title {
+	color: #000000;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 50px 0px;
+}
+.block-second__item-img {}
+.body-color--black {}
+.block-third {}
+.block-third__logo-row {
+	@include flexbox;
+}
+.block-third__logo-item {}
 //====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
