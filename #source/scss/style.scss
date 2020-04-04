@@ -23,7 +23,7 @@
 @font-face {
 	font-family: 'SFCompactText';
 	src: url('../fonts/SFCompactText/SF-Compact-Text-Medium.eot');
-	src: local('☺'), url('../../fonts/SFCompactText/SF-Compact-Text-Medium.woff') format('woff'), url('../../fonts/SFCompactText/SF-Compact-Text-Medium.ttf') format('truetype'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.svg') format('svg');
+	src: local('☺'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.woff') format('woff'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.ttf') format('truetype'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -134,7 +134,154 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.body-color--grey {
+background-color: #f0f0f0;
+height: 624px;
+}
+.block-first__row {
+	@include flexbox;
+}
+.block-first__col {
+	flex: 0 0 50%;
+}
+.block-first__wrap--left {}
+.body-img__wrap {
+	position: relative;
+}
+.body-img--white {
+	position: absolute;
+	top: 169px;
+    left: -91px;
+}
+.body-img--black {
+	position: absolute;
+	top: -41px;
+   left: 72px;
+}
+.block-first__wrap--right {}
+.block-first__content {
+	margin: 144px 0px 0px 80px;
+	width: 377px;
+}
+.block-first__content-item {
+	margin: 0px 0px 43px 0px;
 
+}
+.block-first__content-item-header {
+	align-items:center;
+	@include flexbox;
+	margin-bottom: 11px;
+}
+.block-first__content-item-header-logo {
+	flex:0 0 56px;
+	& img{
+		width: 100%;
+	}
+}
+.block-first__content-item-header-title {
+	margin-left: 21px;
+	color: #3cd072;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+}
+.block-first__content-item-bottom {
+	color: #000000;
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px 0px 30px 0px;
+}
+
+
+.block-second {
+	padding: 48px 0px 0px 0px;
+}
+.block-container__row {
+	@include flexbox;
+	flex-direction:column;
+	text-align: center;
+}
+.block-container__logo {
+	margin: 0px 0px 31px 0px;
+	& img{
+
+	}
+	// text-align: center;
+}
+.block-container__subtitle {
+	color: #000000;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 16px 0px;
+	
+	&--white{
+		color: #fff;
+		font-family: "Myriad Pro - Semibold";
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+		margin: 0px 0px 16px 0px;
+	}
+}
+.block-container__title {
+	color: #3cd072;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 44px 0px;
+
+	&--third-block{
+	color: #3cd072;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 58px 0px;
+	}
+}
+.block-second__wrap {}
+.block-second__row {
+	@include flexbox;
+	justify-content: space-between;
+}
+.block-second__col {}
+.block-second__item-row {
+	@include flexbox;
+	flex-direction:column;
+	text-align: center;
+}
+.block-second__item-logo {
+	margin: 0px 0px 31px 0px;
+}
+.block-second__item-title {
+	color: #000000;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0px 0px 50px 0px;
+}
+.block-second__item-img {}
+.body-color--black {
+	background-color: #000;
+}
+.block-third {
+	padding: 79px 0px 0px 0px;
+}
+.block-third__logo-row {
+	@include flexbox;
+	justify-content: space-between;
+	margin: 0px 0px 99px 0px;
+}
+.block-third__logo-item {
+	width: 10%;
+}
 //====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

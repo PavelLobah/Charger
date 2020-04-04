@@ -2,7 +2,10 @@
 .header {
 	background: url('../img/01.png') 0 0/cover no-repeat;
 	background-color: #3cd072;
-	// z-index: 100;
+	z-index: 10;
+	position: relative;
+	
+
 }
 .container {}
 .header__row {
@@ -106,6 +109,7 @@ margin: 0px 25px 0px 0px;
 	line-height: 19.75px;
 	/* Text style for "A, p, p," */
 	letter-spacing: -0.7px;
+	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 }
 .header-form {
 	margin: 0px 0px 84px 0px;
