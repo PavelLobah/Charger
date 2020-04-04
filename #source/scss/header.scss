@@ -1,0 +1,205 @@
+//====================================================================================================
+.header {
+	background: url('./../../img/01.png') 0 0/cover no-repeat;
+	background-color: #3cd072;
+	// z-index: 100;
+}
+.container {}
+.header__row {
+	padding: 61px 0px 0px 0px;
+	@include flexbox;
+}
+.header_colum {
+	flex: 0 0 50%;
+}
+.header_colum-left {}
+.header__title {
+color: #ffffff;
+font-family: 'SFCompactText';
+font-size: 35px;
+font-weight: 400;
+line-height: 22.63px;
+text-transform: uppercase;
+/* Text style for "CHARGER" */
+letter-spacing: -0.2px;
+margin-bottom: 105px;
+}
+.header__devis_row {
+	@include flexbox;
+	margin: 0px 0px 21px 0px;
+
+}
+.header__devis-img {
+width: 57px;
+margin: 0px 25px 0px 0px;
+}
+
+
+.header__devis-content-row {
+	@include flexbox;
+	flex-direction:column;
+
+}
+.header__devis-title1 {
+	font-size:26px;
+	font-weight: 400;
+	line-height: 32px;
+	color: #ffffff;
+
+}
+.header__devis-title2 {
+	font-family:'SFCompactText';
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+}
+.header__devis-content-bottom {
+	width: 450px;
+	font-weight: 300;
+    line-height: 24px;
+    font-size: 14px;
+    color: #eceaea;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.header-logo {
+	
+}
+.header-logo__conteiner {
+	width: 216px;
+	height: 48px;
+	background-color: #0d0d0d;
+	border-radius: 5px;
+	margin: 0px 0px 57px 0px;
+	&:hover{
+		background-color: #31a960;
+	}
+}
+.header-logo__row {
+	@include flexbox;
+}
+.header-logo__img {
+	& img{
+		margin: 5px 18px 9px 36px;
+	}
+}
+.header-logo__description {
+		@include flexbox;
+	flex-direction:column;
+}
+.header-logo__description-title1 {
+	letter-spacing: -0.39px;
+	color: #ffffff;
+	font-family: "Lucida Grande";
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 19.75px;
+	/* Text style for "Soon on th" */
+	letter-spacing: -0.39px;
+}
+.header-logo__description-title2 {
+	color: #ffffff;
+	font-family: "Lucida Grande";
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 19.75px;
+	/* Text style for "A, p, p," */
+	letter-spacing: -0.7px;
+}
+.header-form {
+	margin: 0px 0px 84px 0px;
+}
+.header-form__label {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px 0px 12px 0px;
+}
+input[type="email"]{
+	width: 296px;
+	height: 48px;
+	border: 2px solid #ffffff;
+	margin: 0px 0px 84px 0px;
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	background: transparent;
+	padding-left: 15px;
+	outline: none;
+
+	&::placeholder{
+		color:#fff;
+
+
+	}
+
+	&.header-form__input {
+		margin: 0px 24px 0px 0px;
+	}
+
+}
+.header-form__button {
+width: 136px;
+height: 48px;
+background-color: #ffffff;
+color: #3cd072;
+font-family: "Myriad Pro - Semibold";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+border-radius: 5px;
+text-align: center;
+border: none;
+}
+
+.header_colum{
+	& img{
+		
+	}
+}
+.header-img__black {
+	position: absolute;
+	z-index: 1;
+	top: -4px;
+
+}
+.header-img__white {
+	top:50px;
+	z-index: 2;
+	position: absolute;
+	top: 39px;
+   left: 127px;
+}
+.header-img__wrapper {
+	position: relative;
+}
+
+//====================================================================================================
+/*
+	Стиль иконки бургера
+	.icon-menu{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/
