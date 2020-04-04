@@ -23,7 +23,7 @@
 @font-face {
 	font-family: 'SFCompactText';
 	src: url('../fonts/SFCompactText/SF-Compact-Text-Medium.eot');
-	src: local('☺'), url('../../fonts/SFCompactText/SF-Compact-Text-Medium.woff') format('woff'), url('../../fonts/SFCompactText/SF-Compact-Text-Medium.ttf') format('truetype'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.svg') format('svg');
+	src: local('☺'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.woff') format('woff'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.ttf') format('truetype'), url('../fonts/SFCompactText/SF-Compact-Text-Medium.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -134,7 +134,66 @@ body {
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.body-color--grey {
+background-color: #f0f0f0;
+height: 624px;
+}
+.block-first__row {
+	@include flexbox;
+}
+.block-first__col {
+	flex: 0 0 50%;
+}
+.block-first__wrap--left {}
+.body-img__wrap {
+	position: relative;
+}
+.body-img--white {
+	position: absolute;
+	top: 169px;
+    left: -91px;
+}
+.body-img--black {
+	position: absolute;
+	top: -41px;
+   left: 72px;
+}
+.block-first__wrap--right {}
+.block-first__content {
+	margin: 144px 0px 0px 80px;
+	width: 377px;
+}
+.block-first__content-item {
+	margin: 0px 0px 43px 0px;
 
+}
+.block-first__content-item-header {
+	align-items:center;
+	@include flexbox;
+	margin-bottom: 11px;
+}
+.block-first__content-item-header-logo {
+	flex:0 0 56px;
+	& img{
+		width: 100%;
+	}
+}
+.block-first__content-item-header-title {
+	margin-left: 21px;
+	color: #3cd072;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+}
+.block-first__content-item-bottom {
+	color: #000000;
+	font-family: "Helvetica Neue";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px 0px 30px 0px;
+}
 //====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
