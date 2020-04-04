@@ -879,7 +879,7 @@ body.ie .ibg img {
 }
 
 .header {
-  background: url("./../../img/01.png") 0 0/cover no-repeat;
+  background: url("../img/01.png") 0 0/cover no-repeat;
   background-color: #3cd072;
 }
 
