@@ -1224,6 +1224,14 @@ input[type=email].header-form__input {
   line-height: 32px;
   margin: 0px 0px 16px 0px;
 }
+.block-container__subtitle--white {
+  color: #fff;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0px 0px 16px 0px;
+}
 
 .block-container__title {
   color: #3cd072;
@@ -1232,6 +1240,14 @@ input[type=email].header-form__input {
   font-weight: 400;
   line-height: 32px;
   margin: 0px 0px 44px 0px;
+}
+.block-container__title--third-block {
+  color: #3cd072;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0px 0px 58px 0px;
 }
 
 .block-second__row {
@@ -1269,9 +1285,25 @@ input[type=email].header-form__input {
   margin: 0px 0px 50px 0px;
 }
 
+.body-color--black {
+  background-color: #000;
+}
+
+.block-third {
+  padding: 79px 0px 0px 0px;
+}
+
 .block-third__logo-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 0px 99px 0px;
+}
+
+.block-third__logo-item {
+  width: 10%;
 }
